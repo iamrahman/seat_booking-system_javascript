@@ -1,0 +1,74 @@
+.layout
+{
+    margin-left: 30%;
+    background-color: white;
+    width: 40%;
+    border: 2px black;
+    height: auto;
+}
+.seat
+{
+    background-color: grey;
+    border-top: 10px solid black;
+    width: 7%;
+    height: auto;
+    float: left;
+    margin-left: 8%;
+    margin-top: 5%;
+    padding: 2%;
+    box-shadow: 2px 2px 5px black;
+}
+.main
+{
+    background-color:red;
+    border-top: 10px solid black;
+    width: 7%;
+    height: auto;
+    float: left;
+    margin-left: 8%;
+    margin-top: 5%;
+    padding: 2%;
+}
+.screen
+{
+    width: auto;
+    height: 10px;
+    background-color: grey;
+}
+button
+{
+    margin-top: 10%;
+}
+.details
+{
+    float: left;
+    margin-top: 10%;
+    margin-left: -37%;
+    background-color: brown;
+    width: 40%;
+    height: auto;
+    box-shadow: 5px 5px 5px black;
+}
+#fare
+{
+    position: absolute;
+    bottom: 60%;
+    color: white;
+    font-family: cursive;
+    margin-left: 10px;
+    float: left;
+}
+
+#c_btn
+{
+    background-color: green;
+    color: white;
+    margin-top: -10px;
+}
+.header
+{
+    width: 100%;
+    background-color: black;
+    height: 8%;
+}
+

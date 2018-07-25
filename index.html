@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Booking with JQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="header"><center><h style="color: white; font-size: 50px;">Ticket Booking System</h></center></div>
+        <div class="layout">
+            <br>
+            <div class="screen"></div>
+            <center>Screen</center><br>
+            <div class="seat A1" id="A1" price="Rs.100" onclick="mySeatA1('A1','100')">A1</div>
+            <div class="seat A2" id="A2" price="Rs.100" onclick="mySeatA1('A2','100')">A2</div>
+            <div class="seat A3" id="A3" price="Rs.100" onclick="mySeatA1('A3','100')">A3</div>
+            <div class="seat A4" id="A4" price="Rs.100" onclick="mySeatA1('A4','100')">A4</div>
+            <div class="seat A5" id="A5" price="Rs.100" onclick="mySeatA1('A5','100')">A5</div>
+            <div class="seat B1" id="B1" price="Rs.120" onclick="mySeatA1('B1','120')">B1</div>
+            <div class="seat B2" id="B2" price="Rs.120" onclick="mySeatA1('B2','120')">B2</div>
+            <div class="seat B3" id="B3" price="Rs.120" onclick="mySeatA1('B3','120')">B3</div>
+            <div class="seat B4" id="B4" price="Rs.120" onclick="mySeatA1('B4','120')">B4</div>
+            <div class="seat B5" id="B5" price="Rs.120" onclick="mySeatA1('B5','120')">B5</div>
+            <div class="seat C1" id="C1" price="Rs.130" onclick="mySeatA1('C1','130')">C1</div>
+            <div class="seat C2" id="C2" price="Rs.130" onclick="mySeatA1('C2','130')">C2</div>
+            <div class="seat C3" id="C3" price="Rs.130" onclick="mySeatA1('C3','130')">C3</div>
+            <div class="seat C4" id="C4" price="Rs.130" onclick="mySeatA1('C4','130')">C4</div>
+            <div class="seat C5" id="C5" price="Rs.130" onclick="mySeatA1('C5','130')">C5</div>
+            <div class="seat E1" id="E1" price="Rs.150" onclick="mySeatA1('E1','150')">E1</div>
+            <div class="seat E2" id="E2" price="Rs.150" onclick="mySeatA1('E2','150')">E2</div>
+            <div class="seat E3" id="E3" price="Rs.150" onclick="mySeatA1('E3','150')">E3</div>
+            <div class="seat E4" id="E4" price="Rs.150" onclick="mySeatA1('E4','150')">E4</div>
+            <div class="seat E5" id="E5" price="Rs.150" onclick="mySeatA1('E5','150')">E5</div>
+            <div class="seat F1" id="F1" price="Rs.200" onclick="mySeatA1('F1','200')">F1</div>
+            <div class="seat F2" id="F2" price="Rs.200" onclick="mySeatA1('F2','200')">F2</div>
+            <div class="seat F3" id="F3" price="Rs.200" onclick="mySeatA1('F3','200')">F3</div>
+            <div class="seat F4" id="F4" price="Rs.200" onclick="mySeatA1('F4','200')">F4</div>
+            <div class="seat F5" id="F5" price="Rs.200" onclick="mySeatA1('F5','200')">F5</div>
+        </div>
+        <div class="details">
+            <center><h2 style="color: white;">Ticket Details</h2></center>
+            <hr>
+            <h4 style="color: white;">Seat No. : <b id="s_seat" style="color: white;"></b></h4><br>
+            <label style="color: white;">Price: Rs. </label><b style="color: white;" id="money"></b><br>
+            <center><button id="c_btn" onclick="myfun()">Checkout</button></center>
+        </div>
+        <br>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var ArrayData = [];
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.count) {
+            localStorage.count = Number(localStorage.count)+1;
+        } else {
+            localStorage.count = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.count;
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+function load()
+{
+    var odser = JSON.parse(localStorage.getItem("data"));
+    document.getElementById("result1").innerHTML = odser;
+}
+function fun()
+{
+    var odser = JSON.parse(localStorage.getItem("data"));
+    ArrayData = odser;
+    ArrayData.push(3);
+    var oser = JSON.stringify(ArrayData);
+    localStorage.setItem("data", oser);
+    var odser = JSON.parse(localStorage.getItem("data"));
+    document.getElementById("result1").innerHTML = odser;
+}
+</script>
+</head>
+<body onload="load()">
+<button onclick="clickCounter()" type="button">Click me!</button>
+<button onclick="fun()" type="button">Click me! Array</button>
+<div id="result"></div>
+<div id="result1"></div>
+</body>
+</html>
